@@ -1,0 +1,224 @@
+---
+title: "Test Post 6"
+author: "Zxphyr"
+date: "2025-05-12"
+time: "10:00 AM"
+category: "TryHackMe"
+tags: ["test", "example", "test2", "test3"]
+image: "htb-menu.png"
+alt: "A test image"
+published: true
+---
+
+# Heading Level 1
+
+Hello
+
+## Heading Level 2
+
+Hello 2
+
+### Heading Level 3
+
+Hello 3
+
+#### Heading Level 4
+
+Hello 4
+
+##### Heading Level 5
+
+Hello 5
+
+###### Heading Level 6
+
+Hello 6
+
+---
+
+## Paragraphs & Line Breaks
+
+This is a paragraph with  
+a line break (notice the double space at the end of the previous line).
+
+Another paragraph with **bold**, *italic*, ***bold italic***, and ~~strikethrough~~.
+
+You can also combine `inline code` with other text.
+
+---
+
+## Blockquote
+
+> This is a blockquote.  
+> It can span multiple lines.  
+>> And it can nest.
+
+---
+
+## Lists
+
+### Unordered List
+- Item 1
+  - Nested Item 1a
+  - Nested Item 1b
+- Item 2
+  - [ ] Task unchecked
+  - [x] Task checked
+
+### Ordered List
+1. First item
+2. Second item
+   1. Nested item
+   2. Another nested item
+3. Third item
+
+---
+
+## Code Blocks
+
+### Inline Code
+Use `npm install` to install the package.
+
+### Fenced Code Block
+
+```js
+// Function with default parameters and template literals
+function greet(name = "World", enthusiastic = true) {
+  let message = `Hello, ${name}`;
+  if (enthusiastic) {
+    message += "!!!";
+  }
+  return message;
+}
+
+// Array, object, loop, and map
+const names = ["Alice", "Bob", "Charlie"];
+const greetings = {};
+names.forEach((name) => {
+  greetings[name] = greet(name);
+});
+
+// Class with constructor, method, and static method
+class Circle {
+  constructor(radius) {
+    this.radius = radius;
+  }
+
+  area() {
+    return Math.PI * this.radius ** 2;
+  }
+
+  static describe() {
+    return "A shape with all points equidistant from the center.";
+  }
+}
+
+// Try-catch block
+try {
+  const c = new Circle(5);
+  console.log(`Area: ${c.area().toFixed(2)}`);
+  console.log(Circle.describe());
+  console.log(greetings["Daisy"]); // undefined
+} catch (error) {
+  console.error("Something went wrong:", error);
+}
+
+// Arrow function and filter
+const evenNumbers = [...Array(10).keys()].filter((x) => x % 2 === 0);
+console.log("Even numbers:", evenNumbers);
+```
+
+### Indented Code Block
+
+```py
+import math
+
+# Function with default and keyword arguments
+def greet(name="World", enthusiastic=True):
+    message = f"Hello, {name}"
+    if enthusiastic:
+        message += "!!!"
+    return message
+
+# List, dictionary, loop, and list comprehension
+names = ["Alice", "Bob", "Charlie"]
+greetings = {name: greet(name) for name in names}
+
+# Class with constructor, instance method, and static method
+class Circle:
+    def __init__(self, radius):
+        self.radius = radius
+
+    def area(self):
+        return math.pi * self.radius ** 2
+
+    @staticmethod
+    def describe():
+        return "A shape with all points equidistant from the center."
+
+# Exception handling
+try:
+    c = Circle(5)
+    print(f"Area: {c.area():.2f}")
+    print(Circle.describe())
+    print(greetings["Daisy"])  # KeyError
+except KeyError as e:
+    print(f"Key error: {e}")
+
+# Lambda and filter
+even_numbers = list(filter(lambda x: x % 2 == 0, range(10)))
+print("Even numbers:", even_numbers)
+```
+
+---
+
+## Links
+
+[Inline Link](https://example.com)
+[Reference Link][ref]
+[https://www.example.com](https://www.example.com)
+
+[ref]: https://example.com
+
+---
+
+## Images
+
+<Image src="https://raw.githubusercontent.com/0xZxphyr/blog-posts/main/assets/htb-menu.png" alt="This is an alt for the image" />
+
+<Image src="https://raw.githubusercontent.com/0xZxphyr/blog-posts/main/assets/web_80.webp" alt="This is an alt for the image" />
+
+---
+
+## Horizontal Rule
+
+---
+
+## Tables
+
+| Syntax    | Description |
+| --------- | ----------- |
+| Header    | Title       |
+| Paragraph | Text        |
+
+---
+
+## HTML in Markdown
+
+<p>This is raw HTML inside Markdown.</p>
+
+---
+
+## Escaping Characters
+
+\*Escaped asterisks\*, \`backticks\`, #hash, \_underscores\_
+
+---
+
+## Footnotes
+
+This is a sentence with a footnote.[^1]
+
+[^1]: This is the footnote.
+
+---
